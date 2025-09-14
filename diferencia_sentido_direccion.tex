@@ -1,0 +1,259 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+% Paquetes necesarios
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{cite}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{siunitx}
+
+% Configuración para español
+\decimalpoint
+
+% Definir comandos útiles
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+
+\begin{document}
+
+\title{Diferencia Fundamental entre Dirección y Sentido de un Vector: Un Análisis Conceptual y Aplicado}
+
+\author{
+\IEEEauthorblockN{[Nombre del Autor]}
+\IEEEauthorblockA{\textit{Departamento de [Departamento]} \\
+\textit{Universidad Nacional de San Agustín}\\
+Arequipa, Perú \\
+[email@unsa.edu.pe]}
+}
+
+\maketitle
+
+\begin{abstract}
+En el análisis vectorial, existe una confusión conceptual recurrente entre los términos ``dirección'' y ``sentido'' de un vector. Este informe presenta una distinción clara y rigurosa entre ambos conceptos, demostrando que la dirección define la orientación espacial de la línea de acción infinita sobre la que yace el vector, mientras que el sentido especifica una de las dos posibles orientaciones a lo largo de esa línea. Se proporciona una fundamentación geométrica formal, representación analítica en sistemas de coordenadas, y se analizan casos de estudio prácticos en física e ingeniería donde esta distinción es crucial para la correcta resolución de problemas. Los resultados muestran que el dominio de esta diferencia conceptual es esencial para el análisis vectorial riguroso y tiene implicaciones directas en aplicaciones de electromagnetismo, ingeniería estructural y cinemática.
+\end{abstract}
+
+\begin{IEEEkeywords}
+vectores, análisis vectorial, dirección, sentido, física aplicada, ingeniería
+\end{IEEEkeywords}
+
+\section{Introducción}
+
+En el lenguaje de la física y la ingeniería, los vectores son herramientas matemáticas de una importancia capital. Permiten describir y modelar magnitudes que, por su naturaleza, no pueden ser caracterizadas completamente por un único valor numérico, como la masa o la temperatura, conocidas como magnitudes escalares \cite{grossman2012algebra}. Magnitudes como la velocidad, la fuerza o el campo eléctrico exigen una especificación no solo de su intensidad, sino también de su orientación en el espacio \cite{grossman2012algebra}.
+
+Sin embargo, en el estudio de estas entidades matemáticas surge una confusión conceptual recurrente, especialmente entre los estudiantes que se inician en la materia: la distinción entre la dirección y el sentido de un vector. Con frecuencia, ambos términos se utilizan de manera intercambiable, lo que constituye un error fundamental. Esta no es una mera sutileza semántica, sino una distinción conceptual crítica cuyo dominio es un pilar para el análisis vectorial riguroso y la correcta aplicación de las leyes físicas \cite{kolman2006algebra}.
+
+El objetivo de este informe es desambiguar de manera definitiva y exhaustiva la diferencia entre la dirección y el sentido de un vector. La tesis central que se defenderá es que la dirección define la orientación espacial de la línea de acción infinita sobre la que yace el vector, mientras que el sentido especifica una de las dos posibles orientaciones a lo largo de esa línea.
+
+\section{Fundamentos de las Magnitudes Vectoriales}
+
+Para comprender la diferencia entre dirección y sentido, es imperativo establecer primero una definición clara de lo que es un vector y cuáles son sus propiedades definitorias.
+
+Geométricamente, un vector se concibe como un segmento de recta orientado dentro de un espacio euclidiano. Su representación gráfica más común es una flecha \cite{kolman2006algebra}. Este segmento está unívocamente definido por un punto de origen (o punto de aplicación) y un punto final (o extremo) \cite{kolman2006algebra}. La esencia de un vector reside en tres características fundamentales que lo describen por completo:
+
+\begin{enumerate}
+\item \textbf{Módulo (o Magnitud):} Es la longitud del segmento de recta que representa al vector. Corresponde a la ``intensidad'' o ``tamaño'' de la magnitud física que se está modelando. El módulo es siempre una cantidad escalar no negativa \cite{grossman2012algebra}. Se denota como $|\mathbf{v}|$ o simplemente $v$.
+
+\item \textbf{Dirección:} Es la recta infinita que contiene al vector, también conocida como ``recta soporte'' o ``línea de acción''. Por extensión, la dirección también se refiere al conjunto de todas las rectas paralelas a esta línea de acción \cite{kolman2006algebra}.
+
+\item \textbf{Sentido:} Es la orientación específica del vector sobre su línea de acción, la cual se indica gráficamente mediante la punta de la flecha. El sentido define ``hacia dónde'' apunta el vector a lo largo de su dirección \cite{ferrovial2023vectores}.
+\end{enumerate}
+
+\section{Análisis Detallado de la Dirección Vectorial}
+
+La dirección es el atributo más amplio que define la orientación de un vector en el espacio. Formalmente, la dirección de un vector es la de su recta soporte. En consecuencia, dos o más vectores poseen la misma dirección si sus respectivas rectas soportes son paralelas, sin importar sus módulos o hacia dónde apunten sus flechas \cite{superprof_vectores}.
+
+Una analogía efectiva para visualizar este concepto es pensar en una autopista o una vía de tren \cite{openstax2021algebra}. La autopista en sí misma, extendiéndose indefinidamente en ambas orientaciones, representa una dirección. Todos los vehículos que se mueven sobre esa autopista, ya sea en un carril o en el otro, comparten la misma dirección de movimiento.
+
+Analíticamente, en un sistema de coordenadas cartesiano bidimensional, la dirección se cuantifica de manera unívoca mediante el ángulo, comúnmente denotado por la letra griega theta ($\theta$), que la línea de acción del vector forma con un eje de referencia. Por convención, este eje suele ser el semieje positivo de las abscisas (eje X), y el ángulo se mide en sentido antihorario \cite{grossman2012algebra}.
+
+\section{Análisis Detallado del Sentido Vectorial}
+
+Una vez establecida una dirección, existen únicamente dos orientaciones posibles a lo largo de ella. El sentido es precisamente la elección de una de estas dos orientaciones \cite{superprof_vectores}. Si la dirección es la autopista, el sentido corresponde al carril específico que se toma: el que va ``hacia el norte'' o el que va ``hacia el sur'' \cite{fastercapital_direccion}.
+
+Gráficamente, el sentido es representado de manera inequívoca por la punta de la flecha del vector \cite{kolman2006algebra}. Este concepto es fundamental para definir los vectores opuestos. Dos vectores son opuestos si y solo si tienen el mismo módulo y la misma dirección, pero sentidos contrarios \cite{serway2008fisica}.
+
+\section{Síntesis de la Distinción}
+
+La relación entre dirección y sentido es jerárquica: la dirección es un concepto más general y fundamental, mientras que el sentido es una especificación subordinada a ella. Esta distinción se resume en la Tabla \ref{tab:comparacion}.
+
+\begin{table}[htbp]
+\caption{Comparación Conceptual entre Dirección y Sentido}
+\begin{center}
+\begin{tabular}{|p{2.2cm}|p{4.8cm}|p{4.8cm}|}
+\hline
+\textbf{Característica} & \textbf{Dirección} & \textbf{Sentido} \\
+\hline
+Definición & La línea infinita que contiene al vector, o cualquier recta paralela a esta & Una de las dos posibles orientaciones sobre la línea de acción \\
+\hline
+Representación Gráfica & La inclinación de la recta soporte del vector & La punta de la flecha del vector \\
+\hline
+Representación Analítica & El ángulo ($\theta$) que forma con un eje de referencia & Los signos (+/-) de las componentes cartesianas del vector \\
+\hline
+Analogía & Una calle de doble vía & El carril específico por el que se circula \\
+\hline
+\end{tabular}
+\label{tab:comparacion}
+\end{center}
+\end{table}
+
+Es interesante notar que esta distinción conceptual tan marcada en la lengua española no siempre es tan explícita en otros idiomas. En inglés, la palabra \emph{direction} a menudo engloba tanto el concepto de dirección como el de sentido. Esta diferencia lingüística tiene una consecuencia pedagógica importante: el idioma español, al separar los términos, obliga a una mayor precisión conceptual desde el inicio del aprendizaje.
+
+\section{Representación Analítica}
+
+En un sistema cartesiano bidimensional, un vector $\mathbf{v}$ con origen en $(0,0)$ se representa por las coordenadas de su punto final, conocidas como sus componentes escalares $\langle v_x, v_y \rangle$. Esta representación también se escribe como $\mathbf{v} = v_x \mathbf{i} + v_y \mathbf{j}$, donde $\mathbf{i}$ y $\mathbf{j}$ son los vectores unitarios.
+
+La belleza de esta notación reside en cómo un simple par de números codifica eficientemente las tres propiedades del vector:
+
+\subsection{Determinación del Módulo}
+El módulo $|\mathbf{v}|$ se calcula aplicando el teorema de Pitágoras:
+\begin{equation}
+|\mathbf{v}| = \sqrt{v_x^2 + v_y^2}
+\end{equation}
+
+\subsection{Determinación de la Dirección}
+La dirección, representada por el ángulo $\theta$ con el eje X positivo, se obtiene de:
+\begin{equation}
+\theta = \arctan\left(\frac{v_y}{v_x}\right)
+\end{equation}
+
+Es crucial ajustar el resultado considerando el cuadrante correcto basándose en los signos de $v_x$ y $v_y$.
+
+\subsection{Determinación del Sentido}
+El sentido queda inequívocamente determinado por los signos de las componentes:
+\begin{itemize}
+\item $v_x > 0$: Sentido hacia la derecha (eje X positivo)
+\item $v_x < 0$: Sentido hacia la izquierda (eje X negativo)  
+\item $v_y > 0$: Sentido hacia arriba (eje Y positivo)
+\item $v_y < 0$: Sentido hacia abajo (eje Y negativo)
+\end{itemize}
+
+\section{Aplicaciones Prácticas}
+
+La diferencia entre dirección y sentido no es un mero ejercicio académico; tiene consecuencias físicas y de ingeniería directas y, a menudo, críticas.
+
+\subsection{Física de Campos}
+
+En electromagnetismo, la distinción es fundamental para predecir el movimiento de partículas cargadas:
+
+\textbf{Campo Eléctrico:} La fuerza eléctrica $\mathbf{F}_e$ que actúa sobre una partícula de carga $q$ en un campo eléctrico $\mathbf{E}$ viene dada por:
+\begin{equation}
+\mathbf{F}_e = q\mathbf{E}
+\end{equation}
+
+La dirección de la fuerza es siempre la misma que la del campo, pero el sentido depende críticamente del signo de la carga. Si $q$ es positiva, la fuerza tiene el mismo sentido que el campo. Si $q$ es negativa, la fuerza tiene el sentido opuesto \cite{ehu_magnetico}.
+
+\textbf{Campo Magnético:} La fuerza magnética sobre una carga $q$ que se mueve con velocidad $\mathbf{v}$ en un campo magnético $\mathbf{B}$ es:
+\begin{equation}
+\mathbf{F}_m = q(\mathbf{v} \times \mathbf{B})
+\end{equation}
+
+La dirección es perpendicular al plano formado por $\mathbf{v}$ y $\mathbf{B}$, y el sentido se determina mediante la regla de la mano derecha, invirtiéndose si la carga es negativa \cite{ehu_magnetico}.
+
+\subsection{Ingeniería Estructural}
+
+En el análisis de armaduras, la distinción entre tensión y compresión se determina por el sentido de la fuerza calculada mediante el método de los nudos:
+
+\begin{itemize}
+\item \textbf{Tensión (T):} Si la fuerza calculada es positiva, la barra está siendo estirada
+\item \textbf{Compresión (C):} Si la fuerza es negativa, la barra está siendo comprimida
+\end{itemize}
+
+Esta distinción matemática tiene una consecuencia física fundamental. Una barra delgada diseñada para tensión puede pandear bajo compresión. Un error de signo puede traducirse en el colapso de una estructura \cite{benguria_armaduras}.
+
+\subsection{Cinemática y Navegación}
+
+En el movimiento relativo, considérese un bote cruzando un río con corriente. La velocidad resultante es:
+\begin{equation}
+\mathbf{v}_{res} = \mathbf{v}_{bote} + \mathbf{v}_{rio}
+\end{equation}
+
+Para un bote que se mueve a \SI{60}{\kilo\meter\per\hour} y un río con corriente de \SI{15}{\kilo\meter\per\hour}:
+
+\begin{itemize}
+\item \textbf{Misma dirección y sentido:} $v_{res} = 60 + 15 = \SI{75}{\kilo\meter\per\hour}$
+\item \textbf{Misma dirección, sentido opuesto:} $v_{res} = 60 - 15 = \SI{45}{\kilo\meter\per\hour}$
+\item \textbf{Direcciones perpendiculares:} $v_{res} = \sqrt{60^2 + 15^2} \approx \SI{61.8}{\kilo\meter\per\hour}$
+\end{itemize}
+
+Un error en la determinación del sentido llevaría a cálculos erróneos de tiempo, consumo de combustible y posición final \cite{tripod2020cinematica}.
+
+\section{Extensiones y Contextos Avanzados}
+
+La distinción euclidiana entre dirección y sentido constituye el primer escalón hacia conceptos más abstractos:
+
+\textbf{Álgebra Geométrica:} En este formalismo, los vectores pueden multiplicarse para generar bivectores (planos orientados) y trivectores (volúmenes orientados). El concepto de ``sentido'' se generaliza al de ``orientación'' que puede ser horaria o antihoraria.
+
+\textbf{Relatividad General:} En el espaciotiempo curvo de Einstein, los vectores se definen localmente en espacios tangentes. Las partículas siguen geodésicas, y el vector tangente a estas trayectorias es crucial para describir el movimiento en geometría curvada.
+
+El dominio de la distinción elemental entre dirección y sentido no es un fin en sí mismo, sino el requisito conceptual indispensable para acceder a estas descripciones más sofisticadas del universo físico y matemático.
+
+\section{Conclusiones}
+
+Este informe ha establecido una distinción clara, rigurosa y exhaustiva entre los conceptos de dirección y sentido de un vector. Se ha demostrado que no son sinónimos, sino propiedades jerárquicamente relacionadas y conceptualmente distintas:
+
+\begin{enumerate}
+\item La dirección define la línea de acción de un vector, respondiendo a ``¿a lo largo de qué línea?''
+\item El sentido especifica la orientación sobre esa línea, respondiendo a ``¿hacia qué extremo de esa línea?''
+\item Esta distinción trasciende la corrección académica y tiene implicaciones prácticas fundamentales
+\item En física de campos, determina el sentido de fuerzas sobre partículas cargadas
+\item En ingeniería estructural, diferencia entre tensión y compresión
+\item En cinemática, es esencial para la composición de velocidades
+\end{enumerate}
+
+La comprensión precisa y aplicación correcta de la diferencia entre dirección y sentido constituye un sello distintivo del rigor científico y técnico. Es una habilidad conceptual básica que subyace a una vasta porción del análisis cuantitativo en las ciencias aplicadas. Su dominio no es opcional, sino un requisito esencial para cualquier estudiante o profesional que aspire a modelar y comprender el mundo físico de manera precisa y fiable.
+
+\begin{thebibliography}{20}
+
+\bibitem{grossman2012algebra}
+S. I. Grossman y J. J. Flores Godoy, \emph{Álgebra Lineal}, 7ª ed. Ciudad de México, México: McGraw-Hill, 2012.
+
+\bibitem{serway2008fisica}
+R. A. Serway y J. W. Jewett, \emph{Física para Ciencias e Ingeniería}, vol. 1, 7ª ed. Ciudad de México, México: Cengage Learning, 2008.
+
+\bibitem{kolman2006algebra}
+B. Kolman y D. R. Hill, \emph{Álgebra Lineal}, 8ª ed. Naucalpan de Juárez, México: Pearson Educación, 2006.
+
+\bibitem{wikipedia_vector}
+Wikipedia, ``Vector'', 8 sep. 2025. [En línea]. Disponible en: https://es.wikipedia.org/wiki/Vector.
+
+\bibitem{ferrovial2023vectores}
+Ferrovial, ``Vectores: qué son, características, tipos'', 2023. [En línea]. Disponible en: https://www.ferrovial.com/es/stem/vectores/.
+
+\bibitem{superprof_vectores}
+Superprof, ``Vectores'', [s.f.]. [En línea]. Disponible en: https://www.superprof.es/apuntes/escolar/matematicas/analitica/vectores/vectores.html.
+
+\bibitem{fisica_sage}
+J. L. Fernández y E. Coronado, ``Módulo, dirección y sentido'', Física con Sage, [s.f.]. [En línea]. Disponible en: https://fisicaconsage.weebly.com/moacutedulo-direccioacuten-y-sentido.html.
+
+\bibitem{platzi_vectores}
+A. Lima, ``Respuesta a '¿Cuál es la diferencia entre dirección y sentido en un vector?'\,'', Platzi, hace 6 años. [En línea]. Disponible en: https://platzi.com/discusiones/1278-algebra-lineal/58059-strongcual-es-la-diferencia-entre-direccion-y-sentido-en-un-vector-que-lo-determinastrong/.
+
+\bibitem{openstax2022vectores}
+OpenStax, ``Vectores en el plano'', Cálculo, Volumen 3, 2022. [En línea]. Disponible en: https://openstax.org/books/c\%C3\%A1lculo-volumen-3/pages/2-1-vectores-en-el-plano.
+
+\bibitem{openstax2021algebra}
+W. Moebs, S. J. Ling, y J. Sanny, ``Álgebra de vectores'', Física universitaria volumen 1, 28 sep. 2021. [En línea]. Disponible en: https://openstax.org/books/f\%C3\%ADsica-universitaria-volumen-1/pages/2-3-algebra-de-vectores.
+
+\bibitem{fastercapital_direccion}
+FasterCapital, ``La importancia de la dirección en los cálculos de vectores'', [s.f.]. [En línea]. Disponible en: https://fastercapital.com/es/tema/la-importancia-de-la-direcci\%C3\%B3n-en-los-c\%C3\%A1lculos-de-vectores.html/1.
+
+\bibitem{scribd_aplicacion}
+S. C. de Bariloche, ``Aplicación de los vectores en la ingeniería civil'', Scribd, [s.f.]. [En línea]. Disponible en: https://es.scribd.com/document/723348396/LA-APLICACION-DE-LOS-VECTORES-EN-LA-INGENIERIA-CIVIL.
+
+\bibitem{ehu_magnetico}
+S. B. Web, ``Movimiento de una carga en un campo eléctrico y magnético uniformes'', Física con ordenador, [s.f.]. [En línea]. Disponible en: http://www.sc.ehu.es/sbweb/fisica3/magnetico/movimiento/movimiento.html.
+
+\bibitem{benguria_armaduras}
+R. Benguria, ``Armaduras'', Pontificia Universidad Católica de Chile, [s.f.]. [En línea]. Disponible en: http://www.fis.puc.cl/\~{}rbenguri/ESTATICADINAMICA/Armaduras.pdf.
+
+\bibitem{tripod2020cinematica}
+D. Tripod, ``Cinemática Marítima'', 2020. [En línea]. Disponible en: https://navegacion.tripod.com/webonmediacontents/7.01\%20Cinematica\%20Maritima\%202020.pdf.
+
+\end{thebibliography}
+
+\end{document}
